@@ -60,6 +60,7 @@
   let exems = vowels.slice(0, combs.filter(c => letters.indexOf(c[0]) < 11 || letters.indexOf(c[1]) < 11).length);
   sortLen(exems, combs);
   letters.split('').join('\n');
+  
   n  8234  8236    a  8299  8236
   h  8289  8236    b  8298  8237
   t  8290  8236    c  8292  8236
@@ -85,6 +86,8 @@
   k  8301  8237    w  8236  8236 *
   x  8302  8237    x  8302  8237
   q  8303  8237    y  8292  8237
+  
+  d = "'" + `8299\n8298\n...`.split('\n').map(c => String.fromCharCode(c)).join('') + "'";
 }
 
 function hidevn(ctx, msg, key) {
